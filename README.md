@@ -98,3 +98,45 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Enjoy your clean and simple YouTube live chat overlay in OBS!
+
+## Customization
+
+You can customize the colors used for the author names and the channel owner's name in the chat overlay. Here's how to do it:
+
+### Changing the Color of Author Names
+
+To change the color of the author names, find the following section in the `styles.css` file:
+
+```css
+yt-live-chat-text-message-renderer {
+    color: #fff !important;
+}
+```
+
+Replace #fff with the desired color code. For example, to change the color to blue, you would use:
+
+```css
+Copiar código
+yt-live-chat-text-message-renderer {
+    color: #0000ff !important;
+}
+```
+
+Changing the Color of the Channel Owner's Name
+To change the color of the channel owner's name, find the following section in the styles.css file:
+
+```css
+Copiar código
+yt-live-chat-text-message-renderer.yt-live-chat-text-message-author-is-owner #author-name {
+    color: #000 !important;
+}
+
+```
+Replace #000 with the desired color code. For example, to change the color to red, you would use:
+
+```css
+Copiar código
+yt-live-chat-text-message-renderer.yt-live-chat-text-message-author-is-owner #author-name {
+    color: #ff0000 !important;
+}
+```
