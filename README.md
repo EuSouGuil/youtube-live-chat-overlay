@@ -116,7 +116,7 @@ yt-live-chat-text-message-renderer {
 Replace #fff with the desired color code. For example, to change the color to blue, you would use:
 
 ```css
-Copiar código
+Copy code
 yt-live-chat-text-message-renderer {
     color: #0000ff !important;
 }
@@ -126,7 +126,7 @@ Changing the Color of the Channel Owner's Name
 To change the color of the channel owner's name, find the following section in the styles.css file:
 
 ```css
-Copiar código
+Copy code
 yt-live-chat-text-message-renderer.yt-live-chat-text-message-author-is-owner #author-name {
     color: #000 !important;
 }
@@ -135,7 +135,7 @@ yt-live-chat-text-message-renderer.yt-live-chat-text-message-author-is-owner #au
 Replace #000 with the desired color code. For example, to change the color to red, you would use:
 
 ```css
-Copiar código
+Copy code
 yt-live-chat-text-message-renderer.yt-live-chat-text-message-author-is-owner #author-name {
     color: #ff0000 !important;
 }
