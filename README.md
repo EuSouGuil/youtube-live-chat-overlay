@@ -1,6 +1,6 @@
 # YouTube Live Chat Overlay CSS for OBS
 
-This custom CSS is designed to transform the popup URL of a YouTube live chat into a simple, lightweight, and transparent overlay for OBS (Open Broadcaster Software). The CSS removes all unnecessary elements from the HTML, creating a clean and minimalistic chat overlay perfect for live streaming.
+This custom CSS is designed to transform the popup URL of a YouTube live chat into a simple, lightweight, and transparent overlay for [OBS (Open Broadcaster Software)](https://github.com/obsproject/obs-studio). The CSS removes all unnecessary elements from the HTML, creating a clean and minimalistic chat overlay perfect for live streaming.
 
 ## Features
 
