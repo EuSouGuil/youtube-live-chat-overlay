@@ -1,56 +1,90 @@
-/* Define styles for the chat area */
-body, yt-live-chat-renderer, yt-live-chat-item-list-renderer {
-    background-color: transparent !important;
+html, body {
     margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
     overflow: hidden !important;
     width: 100% !important;
     height: 100% !important;
 }
 
-/* Adjusts message area height and defines positioning */
-yt-live-chat-item-list-renderer {
-    position: absolute;
-    bottom: 20px;
-    height: calc(100% - 40px) !important;
-    padding: 0 10px !important;
-    box-sizing: border-box !important;
+yt-live-chat-renderer {
+    background: transparent !important;
+    overflow: hidden !important;
 }
 
-/* Styles for messages and owner author color */
+/* adjust padding if needed */
+yt-live-chat-item-list-renderer {
+    position: absolute !important;
+    inset: 0 !important;
+    padding: 8px 12px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+#items.yt-live-chat-item-list-renderer {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    padding-bottom: 0 !important;
+}
+
+/* edit color, font-size or spacing */
 yt-live-chat-text-message-renderer {
-    background-color: transparent !important;
-    width: calc(100% - 20px) !important;
-    margin: 5px 0 !important;
+    background: transparent !important;
+    margin: 4px 0 !important;
     padding: 0 !important;
+    width: 100% !important;
     font-size: 14px !important;
-    color: #fff !important;
+    line-height: 1.35em !important;
+    color: #ffffff !important;
     white-space: pre-wrap !important;
 }
 
-/* Owner author color */
-yt-live-chat-text-message-renderer.yt-live-chat-text-message-author-is-owner #author-name {
-    color: #000 !important;
+yt-live-chat-text-message-renderer[hidden] {
+    display: none !important;
 }
 
-/* Removes unnecessary elements and notices */
-#header, #primary-content, #secondary-content, #footer,
-yt-live-chat-header-renderer, yt-live-chat-message-input-renderer,
-yt-live-chat-action-panel-renderer, yt-live-chat-message-prompt-renderer,
-yt-live-chat-viewer-engagement-message-renderer,
-yt-live-chat-text-message-renderer #img, ::-webkit-scrollbar,
-yt-live-chat-membership-only-mode-message-renderer,
-yt-live-chat-mode-change-message-renderer,
-yt-live-chat-restricted-participation-renderer,
+/* edit font-weight or colors */
+#author-name {
+    font-weight: 600 !important;
+    margin-right: 6px !important;
+}
+
+/* edit owner name color */
+yt-live-chat-text-message-renderer.yt-live-chat-author-is-owner #author-name {
+    color: #000000 !important;
+}
+
+/* edit moderator name color */
+yt-live-chat-text-message-renderer.yt-live-chat-author-is-moderator #author-name {
+    color: #5da9ff !important;
+}
+
 yt-live-chat-author-chip-renderer,
-yt-live-chat-legacy-paid-message-renderer,
-yt-live-chat-legacy-paid-sticker-renderer,
-yt-live-chat-pinned-message-renderer,
-yt-live-chat-viewer-engagement-message-renderer,
+yt-live-chat-text-message-renderer yt-img-shadow,
 yt-live-chat-text-message-renderer yt-icon,
-yt-live-chat-renderer #input, yt-live-chat-text-message-renderer yt-live-chat-author-chip-renderer,
-yt-live-chat-subscription-message-renderer,
+#chat-badges,
+yt-live-chat-header-renderer,
+yt-live-chat-message-input-renderer,
+yt-live-chat-action-panel-renderer,
+yt-live-chat-message-prompt-renderer,
+yt-live-chat-toast-renderer,
+yt-live-chat-banner-manager,
+yt-live-chat-viewer-engagement-message-renderer,
 yt-live-chat-paid-message-renderer,
 yt-live-chat-paid-sticker-renderer,
-yt-live-chat-restricted-participation-renderer {
+yt-live-chat-membership-item-renderer,
+yt-live-chat-subscription-message-renderer,
+yt-live-chat-mode-change-message-renderer,
+yt-live-chat-restricted-participation-renderer,
+yt-live-chat-pinned-message-renderer,
+yt-live-chat-poll-renderer,
+yt-live-chat-ai-summary-renderer,
+yt-live-chat-engagement-message-renderer {
     display: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
 }
